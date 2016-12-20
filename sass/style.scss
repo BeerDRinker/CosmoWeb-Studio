@@ -1,0 +1,378 @@
+/* Coded by Paliy Rostyslav. e-mail: paliy1984@gmail.com. skype: ros.coprandos  !!!SYLB!!! */
+
+@import 'vars';
+@import 'normalize';
+@import 'common';
+
+/*---------- Reset CSS  ----------*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/* ***** NAVBAR ***** */
+
+.navbar {
+    &.navbar-default {
+        background: transparent;
+        border: 0;
+        .navbar-nav {
+            padding-left: 15px;
+            li {
+                a {
+                    color: #fff;
+                    font-size: 12px;
+                    font-weight: 400;
+                    text-transform: uppercase;
+                    padding: 0;
+                    padding-bottom: 18px;
+                    margin: 82px 10px 25px 8px;
+                    letter-spacing: 1px;
+                    &:hover {
+                        color: #fff;
+                        border-bottom: 8px solid #fff;
+                    }
+                    &:focus {
+                        color: #fff;
+                        border-bottom: 8px solid #fff;
+                    }
+                }
+            }
+        }
+        .navbar-text {
+            margin-top: 49px;
+            margin-right: 3px;
+            a {
+                text-align: right;
+                width: 180px;
+                display: block;
+                color: #fff;
+                font-weight: 300;
+                font-size: 18px;
+                background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAASCAYAAABvqT8MAAAAoUlEQVQ4T+3TsQkCQRCF4W9yA40FsQe9AswNFEuwAOuwEw3EPgQDKzCxAAUDs5U97uAQDw0N3Gx23j8sO+8FpJQCI3Ry/ebccYyIFJV4h3mLuL7eY5GBAocP4rpdZGCGTA9xawEHOGHSBHoRcX0HpJTysPMfwA/+0hqPlk13sXpd3Dd2Kq3xar4tNhW9xLQxqTRfzsL39m4EaIx+y7sudYCeOgeETaOOZ+AAAAAASUVORK5CYII=
+) 2px center no-repeat;
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+        button {
+            margin: 0;
+            margin-left: 20px;
+            border: 1px solid #fff;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+            padding: 11px 33px 9px 36px;
+            border-radius: 50px;
+            text-transform: uppercase;
+            font-size: 12px;
+            &:hover {
+                box-shadow: 0 6px 24px rgba(0, 0, 0, 0.2);
+                background: #fff;
+            }
+        }
+    }
+    .navbar-brand {
+        padding-top: 38px;
+    }
+}
+
+
+/* ***** HEADER ***** */
+
+header {
+    color: #fff;
+    background: url(../img/header_BG.jpg) no-repeat;
+    /*background-size: cover;*/
+    height: 100%;
+    .hero {
+        h1 {
+            width: 100%;
+            font-size: 42px;
+            text-transform: uppercase;
+            font-weight: 700;
+            padding-top: 202px;
+            line-height: 53px;
+        }
+        p {
+            width: 405px;
+            padding-top: 45px;
+            font-size: 18px;
+            line-height: 28px;
+            font-weight: 300;
+        }
+        .card {
+            position: relative;
+            padding: 0;
+            margin: 0;
+            &:after {
+                position: absolute;
+                content: url(../img/hand.png);
+                top: 331px;
+                left: 305px;
+                @media screen and (max-width: 1410px) {
+                    display: none;
+                }
+            }
+            img {
+                margin-right: 17px;
+                margin-top: 215px;
+                display: block;
+                float: right;
+                border-radius: 5px;
+                width: 86%;
+            }
+        }
+        #city {
+            width: 80px;
+            background: url(../img/city_arrow.png) 0px center no-repeat;
+            margin-top: 33px;
+            margin-left: 30px;
+            font-size: 16px;
+            font-weight: 700;
+            border: 0;
+            margin-bottom: 130px;
+        }
+        #down {
+            display: block;
+            margin: 0 auto;
+            margin-top: 5px;
+            margin-bottom: 55px;
+            height: 38px;
+            width: 13px;
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAAmCAYAAAAfgBGJAAABCklEQVRIS+3VsU6UQRSG4efTUGhp7GxMCC1XQIF0JBsKYyGBWBM6CwqoSZQbgIoOOqUBLaUksdPCxooLoKChkIRD/s1oZNm9AJJ/qknmvJnMNzPnjTGjql7gJ74keTdakgnQPE5xnuRlD/VBVP8ium9Q1QcxbAd9EK0rPvQgquoznuJtksuRy73GrxEBnKWqLvAM3/EqyVVVzeLHOKPgqoO6JvIVT5peBg2cw3M8xg6mcYPXQz9V1QJOGvgNi0n+VFW3vou1tutqksN/UquqAY4whWO8wTY2GrCeZK+b3zFhVS3hUwN/Y6YBm0k+/j3jPX1W1TIO8KgVfUiy9X8ok5y7gn3sJXk/muItY9zZ+d9WFqsAAAAASUVORK5CYII=);
+            border: 0;
+        }
+    }
+}
+
+
+/* ***** YOUTUBE-VIDEO ***** */
+
+.youtube-video {
+    padding-bottom: 172px;
+    background: rgba(241, 245, 248, 0.6) url(../img/hov_its_work_BG.png) center 80px no-repeat;
+    h2 {
+        padding-top: 87px;
+        margin-bottom: 51px;
+        text-transform: uppercase;
+        text-align: center;
+        font-size: 36px;
+        color: #454141;
+        font-weight: 900;
+        span {
+            color: #fb0707;
+        }
+    }
+    iframe {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/* ***** DO NOT HAVE A CARD? ***** */
+
+.no-card {
+    padding-top: 138px;
+    background: url(../img/hov_its_work_BG.png) center center no-repeat;
+    color: #454141;
+    text-align: center;
+    padding-bottom: 746px;
+    h2 {
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: 900;
+    }
+    h3 {
+        font-family: Roboto!important;
+        font-size: 24px;
+        font-weight: 400;
+        padding-top: 27px;
+        padding-bottom: 28px;
+    }
+    p {
+        font-size: 18px;
+        font-weight: 400;
+    }
+    span {
+        font-family: Roboto!important;
+        color: #e9066b;
+        font-size: 30px;
+        font-weight: 900;
+    }
+    .green-span {
+        color: #61c25e;
+    }
+}
+
+
+/* ***** ORDER SECTION ***** */
+
+.order {
+    position: absolute;
+    background: #f1f5f8 url(../img/order_BG.png) center bottom no-repeat;
+    background-size: 60%;
+    width: 100%;
+    height: 510px;
+    .order-card {
+        /*position: absolute;*/
+        height: 500px;
+        width: 940px;
+       /* margin-top: -500px;*/
+        background: #fff url(../img/05_BG.png) left center no-repeat;
+    }
+}
+
+
+/*---------- Clear Fix  ----------*/
+
+.cf:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+.cf {
+    display: inline-block;
+}
+
+html[xmlns] .cf {
+    display: block;
+}
+
+* html .cf {
+    height: 1%;
+}
